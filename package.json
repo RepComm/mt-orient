@@ -1,0 +1,31 @@
+{
+  "name": "mt-ts-template",
+  "version": "1.0.0",
+  "description": "Minimal minetest mod template using typescript-to-lua",
+  "main": "index.js",
+  "scripts": {
+    "build": "tstl",
+    "dev": "tstl --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/repcomm/mt-ts-template.git"
+  },
+  "keywords": [
+    "glue",
+    "code",
+    "mod"
+  ],
+  "author": "Jon Crowder",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/repcomm/mt-ts-template/issues"
+  },
+  "homepage": "https://github.com/repcomm/mt-ts-template#readme",
+  "devDependencies": {
+    "@repcomm/mt-api": "^1.0.1",
+    "lua-types": "^2.13.1",
+    "typescript": "^5.0.3",
+    "typescript-to-lua": "^1.14.0"
+  }
+}
