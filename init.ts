@@ -145,8 +145,8 @@ minetest.register_node("orient:bamboo", {
   paramtype: "light",
   walkable: false,
   floodable: true,
-  tiles: [{name: "bamboo.png"}],
-  groups: {cracky: 2}
+  tiles: [{ name: "bamboo.png" }],
+  groups: { cracky: 2 }
 });
 
 minetest.register_node("orient:bonzai_baby", {
@@ -157,8 +157,8 @@ minetest.register_node("orient:bonzai_baby", {
   paramtype: "light",
   walkable: false,
   floodable: true,
-  tiles: [{name: "bonzai_baby.png"}],
-  groups: {cracky: 2}
+  tiles: [{ name: "bonzai_baby.png" }],
+  groups: { cracky: 2 }
 });
 
 minetest.register_node("orient:aspen_stair_fancy", {
@@ -196,10 +196,39 @@ minetest.register_node("orient:aspen_trim", {
   drawtype: "nodebox",
   node_box: {
     type: "fixed",
-    fixed: [-0.5,0.4,0.1, 0.5, 0.5, 0.5]
+    fixed: [-0.5, 0.4, 0.1, 0.5, 0.5, 0.5]
   },
-  groups: {cracky: 2},
+  groups: { cracky: 2 },
   paramtype: "light",
   paramtype2: "facedir",
   sunlight_propagates: true,
+});
+
+minetest.register_node("orient:red_painted_log", {
+  tiles: ["orient_wood_red.png" ],
+  description: "red painted log",
+  sunlight_propagates: true,
+  is_ground_content: false,
+  paramtype: "light",
+  drawtype: "nodebox",
+
+  groups: {cracky: 1, wood: 1},
+  // use_texture_alpha = def.use_texture_alpha and "blend" or "clip",
+  node_box: {
+    type: "connected",
+    fixed: [-1/4, -1/2, -1/4, 1/4, 0, 1/4],
+    connect_bottom: [-1/4, 0, -1/4, 1/4, 1/2, 1/4],
+
+    connect_top: [
+      [-1/3, -1/2, -1/6, 1/3, 1/2, 1/6],
+      [-1/6, -1/2, -1/3, 1/6, 1/2, 1/3],
+    ],
+
+    connect_front: [[-1/4, -1/2, -1/2, 1/4, 0, 1/4]],
+    connect_back: [[-1/4, -1/2, -1/4,  1/4, 0, 1/2]],
+
+    connect_left: [[-1/2, -1/2, -1/4, -1/4, 0, 1/4]],
+    connect_right: [[1/4, -1/2, -1/4, 1/2, 0, 1/4]],
+  } as any,
+  connects_to: ["group:stone", "group:wood"]
 });
