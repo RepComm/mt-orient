@@ -1,13 +1,9 @@
-# mt-ts-template
-minimal typescript template for minetest mod creation
+# mt-orient
+minetest orient mod
 
-## usage
-- run `npm run install` to install development dependencies
-- edit [mod.conf](./mod.conf) and change the name and description to match your mod
-- edit [init.ts](./init.ts) and start writing code!
-- run `npm run build` to compile your typescript to lua<br/>
-or
-- run `npm run dev` to build on every file change (local file system watcher)
+adds a set of oriental style decor blocks and entities to minetest, all original artwork
+
+[img](./example.png)
 
 ## dev-dependencies
 - [mt-api](https://github.com/RepComm/mt-api)

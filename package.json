@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/repcomm/mt-ts-template#readme",
   "devDependencies": {
-    "@repcomm/mt-api": "^1.0.1",
+    "@repcomm/mt-api": "^1.0.5",
     "lua-types": "^2.13.1",
     "typescript": "^5.0.3",
     "typescript-to-lua": "^1.14.0"
