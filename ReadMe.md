@@ -3,7 +3,7 @@ minetest orient mod
 
 adds a set of oriental style decor blocks and entities to minetest, all original artwork
 
-[img](./example.png)
+![img](./example.png)
 
 ## dev-dependencies
 - [mt-api](https://github.com/RepComm/mt-api)
